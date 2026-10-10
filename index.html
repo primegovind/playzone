@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090a10">
+<title>PLAYZONE — Gaming Videos</title>
+<style>
+:root{--bg:#090a10;--panel:#131520;--panel2:#1a1d2b;--line:#2b3042;--txt:#f5f6fb;--muted:#a0a6ba;--lime:#a3ff12}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -20%,#302044,transparent 45%),var(--bg);color:var(--txt);font:15px system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.top{height:68px;display:flex;align-items:center;gap:16px;padding:0 5%;border-bottom:1px solid #ffffff12;position:sticky;top:0;background:#090a10ed;backdrop-filter:blur(12px);z-index:4}.logo{font-size:22px;font-weight:950;letter-spacing:-1px;white-space:nowrap}.logo span{color:var(--lime)}.search{flex:1;max-width:560px;display:flex;gap:8px;background:var(--panel);border:1px solid var(--line);padding:0 12px;border-radius:12px}.search input{background:none;border:0;outline:0;color:white;width:100%;padding:12px 0}.btn{border:0;border-radius:11px;padding:11px 15px;font-weight:800}.primary{background:var(--lime);color:#10130b}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--txt)}.top-actions{display:flex;gap:8px;margin-left:auto}.wrap{max-width:1450px;margin:auto;padding:26px 4%;display:grid;grid-template-columns:190px minmax(0,1fr);gap:25px}.side{position:sticky;top:90px;align-self:start}.nav{display:block;width:100%;text-align:left;padding:12px;border:0;border-radius:10px;background:transparent;color:var(--muted);margin:3px 0}.nav.active,.nav:hover{background:#a3ff1218;color:var(--lime)}.hero{border:1px solid #ffffff18;border-radius:22px;padding:30px;min-height:230px;background:linear-gradient(110deg,#171b2c,#2c2445 65%,#512a5b);position:relative;overflow:hidden}.hero:after{content:"🎮";position:absolute;right:7%;top:20px;font-size:clamp(70px,11vw,130px);filter:drop-shadow(0 18px 24px #0008)}.eyebrow{font-size:11px;color:var(--lime);letter-spacing:2px;font-weight:900}.hero h1{font-size:clamp(30px,4vw,48px);line-height:1.05;margin:12px 0}.hero p{color:#c4c7d7;max-width:440px;line-height:1.6}.chips{display:flex;gap:8px;overflow:auto;padding:18px 0}.chip{white-space:nowrap;background:var(--panel);border:1px solid var(--line);color:var(--muted);border-radius:30px;padding:8px 13px}.chip.active{background:var(--lime);color:#111;border-color:var(--lime)}.heading{display:flex;justify-content:space-between;align-items:center;margin:12px 0 16px}.heading h2{font-size:21px;margin:0}.muted{color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{background:var(--panel);border:1px solid #ffffff12;border-radius:15px;overflow:hidden;min-width:0}.thumb{height:155px;background:linear-gradient(135deg,#202a48,#572a62);display:grid;place-items:center;position:relative;overflow:hidden}.thumb video{width:100%;height:100%;object-fit:cover}.thumb .emoji{font-size:58px}.info{padding:13px}.info h3{font-size:14px;line-height:1.4;margin:0 0 7px;overflow-wrap:anywhere}.tag{display:inline-block;margin-top:9px;padding:5px 8px;background:#a3ff1218;color:var(--lime);border-radius:5px;font-size:10px;font-weight:850}.empty{display:none;text-align:center;padding:45px 12px;color:var(--muted)}.empty b{display:block;color:white;font-size:18px;margin-bottom:8px}.panel{display:none;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;margin:18px 0}.panel.show{display:block}.panel h2{margin:0 0 7px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:11px}.fields input,.fields select{min-width:0;width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:#0b0d15;color:white}.fields .full{grid-column:1/-1}.modal{display:none;position:fixed;inset:0;background:#000b;z-index:10;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modalbox{width:min(460px,100%);background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.modalbox input{width:100%;padding:12px;margin:7px 0;border-radius:10px;border:1px solid var(--line);background:#090a10;color:white}.status{font-size:13px;color:var(--muted);margin:12px 0;overflow-wrap:anywhere}.status.error{color:#ff8e8e}.status.ok{color:var(--lime)}.note{border-left:3px solid var(--lime);padding:10px 12px;background:#a3ff120a;color:var(--muted);font-size:12px;margin-top:14px}.footer{text-align:center;padding:25px;color:#7c8296;border-top:1px solid var(--line);font-size:12px;margin-top:30px}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{grid-template-columns:155px minmax(0,1fr);gap:16px}}
+@media(max-width:700px){.top{height:60px;padding:0 3%;gap:8px}.logo{font-size:18px}.top-actions .btn{padding:9px;font-size:12px}.search{padding:0 8px}.wrap{display:block;padding:17px 4%}.side{display:flex;overflow:auto;position:static;margin-bottom:16px;gap:5px}.nav{white-space:nowrap;width:auto;padding:9px 11px;font-size:13px}.hero{padding:22px;min-height:220px}.hero:after{opacity:.3;right:0}.hero p{max-width:90%}.grid{gap:10px}.thumb{height:115px}.info{padding:10px}.info h3{font-size:13px}.fields{grid-template-columns:1fr}.fields .full{grid-column:auto}}
+@media(max-width:380px){.grid{grid-template-columns:1fr}.thumb{height:170px}.search{display:none}}
+</style>
+</head>
+<body>
+<header class="top"><div class="logo">PLAY<span>ZONE</span>.</div><label class="search">⌕ <input id="search" placeholder="Search gameplay..."></label><div class="top-actions"><button class="btn secondary" id="loginBtn">Login</button><button class="btn primary" id="uploadBtn">＋ Upload</button></div></header>
+<div class="wrap">
+<aside class="side"><button class="nav active" data-cat="All">⌂ Home</button><button class="nav" data-cat="Trending">↗ Trending</button><button class="nav" data-cat="Free Fire">♜ Free Fire</button><button class="nav" data-cat="BGMI">🎯 BGMI</button><button class="nav" data-cat="Minecraft">▧ Minecraft</button><button class="nav" data-cat="GTA V">🏎 GTA V</button></aside>
+<main><section class="hero"><div class="eyebrow">LEVEL UP YOUR WATCHLIST</div><h1>YOUR GAME.<br>YOUR MOMENT.</h1><p>Gameplay, clutch moments, tutorials and creator highlights — all in one place.</p><button class="btn primary" id="explore">Explore videos ↗</button></section>
+<div class="chips"><button class="chip active" data-filter="All">All videos</button><button class="chip" data-filter="Free Fire">Free Fire</button><button class="chip" data-filter="BGMI">BGMI</button><button class="chip" data-filter="Minecraft">Minecraft</button><button class="chip" data-filter="GTA V">GTA V</button><button class="chip" data-filter="Tutorials">Tutorials</button><button class="chip" data-filter="Montage">Montage</button></div>
+<section class="panel" id="uploadPanel"><h2>Upload gameplay</h2><p class="muted">Sign in first. Only videos you have rights to upload are allowed.</p><div class="fields"><input class="full" id="title" maxlength="100" placeholder="Video title"><select id="category"><option>Free Fire</option><option>BGMI</option><option>Minecraft</option><option>GTA V</option><option>Tutorials</option><option>Montage</option><option>Other</option></select><input id="creator" maxlength="40" placeholder="Creator name (optional)"><input class="full" type="file" id="file" accept="video/mp4,video/webm,video/quicktime"><button class="btn primary full" id="publish">Upload video</button></div><div class="status" id="uploadStatus"></div><div class="note">Initial setup uses a 50 MB max upload size on Supabase Free. Large gaming videos may need compression or a paid storage plan.</div></section>
+<div class="heading"><h2 id="heading">Featured gameplay</h2><span class="muted" id="count">Loading…</span></div><div class="grid" id="grid"></div><div class="empty" id="empty"><b>No videos found</b>Try another category or search term.</div>
+</main></div><footer class="footer">PLAYZONE © 2026 · Made for gamers, by gamers · Report content that violates rights or community rules.</footer>
+<div class="modal" id="authModal"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2 id="authHeading">Login to PLAYZONE</h2><button class="btn secondary" id="closeAuth">✕</button></div><p class="muted">Use email and password. For new accounts, check your email if confirmation is enabled.</p><input id="email" type="email" autocomplete="email" placeholder="Email address"><input id="password" type="password" autocomplete="current-password" placeholder="Password (minimum 8 characters)"><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px"><button class="btn primary" id="signIn">Login</button><button class="btn secondary" id="signUp">Create account</button><button class="btn secondary" id="signOut" style="display:none">Logout</button></div><div class="status" id="authStatus"></div><div class="note">Demo credentials are not provided. Create your own account. Never share your password or secret keys.</div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const CONFIG={url:"",anonKey:""}; // Add your Supabase Project URL and publishable/anon key here before deployment.
+const $=id=>document.getElementById(id);
+let sb=null,user=null,activeFilter='All',videos=[];
+const samples=[
+{title:'FREE FIRE 🔥 Insane Headshot Montage',category:'Free Fire',creator:'Hype Gaming',emoji:'🔥',views:'Sample'},
+{title:'BGMI Squad Wipe — 1 HP Clutch',category:'BGMI',creator:'Clutch Zone',emoji:'🎯',views:'Sample'},
+{title:'I Built a Secret Survival Base!',category:'Minecraft',creator:'BlockMaster',emoji:'⛏️',views:'Sample'},
+{title:'GTA V — Craziest Stunt Challenge',category:'GTA V',creator:'TurboPlay',emoji:'🏎️',views:'Sample'},
+{title:'Best Sensitivity Settings (Beginner Guide)',category:'Tutorials',creator:'Pro Tips',emoji:'⚙️',views:'Sample'},
+{title:'PHONK EDIT ⚡ Velocity + Beat Sync',category:'Montage',creator:'MotionX',emoji:'🎧',views:'Sample'}
+];
+function status(el,msg,type=''){el.textContent=msg;el.className='status '+type}
+function configured(){return !!(window.supabase&&CONFIG.url&&CONFIG.anonKey)}
+function initClient(){if(configured())sb=window.supabase.createClient(CONFIG.url,CONFIG.anonKey)}
+function render(){
+ const q=$('search').value.trim().toLowerCase(), list=videos.filter(v=>(activeFilter==='All'||activeFilter==='Trending'||v.category===activeFilter)&&(`${v.title} ${v.category} ${v.creator||''}`).toLowerCase().includes(q));
+ $('grid').innerHTML='';list.forEach(v=>{
+  const card=document.createElement('article');card.className='card';
+  const thumb=document.createElement('div');thumb.className='thumb';
+  if(v.video_url){const vid=document.createElement('video');vid.src=v.video_url;vid.controls=true;vid.preload='metadata';vid.playsInline=true;thumb.appendChild(vid)}
+  else {const e=document.createElement('span');e.className='emoji';e.textContent=v.emoji||'🎮';thumb.appendChild(e)}
+  const info=document.createElement('div');info.className='info';const h=document.createElement('h3');h.textContent=v.title;
+  const meta=document.createElement('div');meta.className='muted';meta.textContent=(v.creator||'PLAYZONE creator')+' · '+(v.views||'Community upload');
+  const tag=document.createElement('span');tag.className='tag';tag.textContent=v.category.toUpperCase();info.append(h,meta,tag);card.append(thumb,info);$('grid').appendChild(card)
+ });
+ $('count').textContent=list.length+' video'+(list.length===1?'':'s');$('empty').style.display=list.length?'none':'block';$('heading').textContent=activeFilter==='All'?'Featured gameplay':activeFilter+' videos'
+}
+async function loadVideos(){
+ if(!sb){videos=samples;render();status($('uploadStatus'),'Setup required: connect this page to your Supabase project to enable real accounts and public uploads.');return}
+ const {data,error}=await sb.from('videos').select('id,title,category,creator,video_url,created_at').eq('status','published').order('created_at',{ascending:false}).limit(100);
+ if(error){videos=samples;render();console.error(error);return}
+ videos=(data||[]).map(v=>({...v,views:'Community upload'}));render()
+}
+function openAuth(){ $('authModal').classList.add('show');$('authStatus').textContent='';$('signOut').style.display=user?'inline-block':'none';$('signIn').style.display=user?'none':'inline-block';$('signUp').style.display=user?'none':'inline-block';$('authHeading').textContent=user?'Your account':'Login to PLAYZONE';if(user)status($('authStatus'),'Signed in as '+user.email,'ok')}
+$('loginBtn').onclick=openAuth;$('closeAuth').onclick=()=>$('authModal').classList.remove('show');
+$('authModal').addEventListener('click',e=>{if(e.target===$('authModal'))$('authModal').classList.remove('show')});
+async function authAction(kind){
+ if(!sb){status($('authStatus'),'Setup required: add Supabase URL and publishable/anon key to index.html before deploying.','error');return}
+ const email=$('email').value.trim(),password=$('password').value;
+ if(!email||password.length<8){status($('authStatus'),'Enter a valid email and a password of at least 8 characters.','error');return}
+ status($('authStatus'),'Please wait…');
+ const result=kind==='signup'?await sb.auth.signUp({email,password}):await sb.auth.signInWithPassword({email,password});
+ if(result.error){status($('authStatus'),result.error.message,'error');return}
+ if(kind==='signup'&&!result.data.session){status($('authStatus'),'Account created. Check your email to confirm, then log in.','ok');return}
+ user=result.data.user;updateAuth();openAuth()
+}
+$('signIn').onclick=()=>authAction('login');$('signUp').onclick=()=>authAction('signup');
+$('signOut').onclick=async()=>{if(sb)await sb.auth.signOut();user=null;updateAuth();openAuth();status($('authStatus'),'Logged out.','ok')};
+function updateAuth(){$('loginBtn').textContent=user?'Account':'Login';$('uploadBtn').textContent=user?'＋ Upload':'Login to upload';if(user){$('authHeading').textContent='Your account'} }
+$('uploadBtn').onclick=()=>{if(!user){openAuth();return}$('uploadPanel').classList.toggle('show');$('uploadPanel').scrollIntoView({behavior:'smooth',block:'start'})};
+$('explore').onclick=()=>$('grid').scrollIntoView({behavior:'smooth'});
+$('search').addEventListener('input',render);
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{activeFilter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('[data-cat]').forEach(x=>x.classList.toggle('active',x.dataset.cat===activeFilter));render()});
+document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{activeFilter=b.dataset.cat;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x.dataset.filter===activeFilter));document.querySelectorAll('[data-cat]').forEach(x=>x.classList.toggle('active',x===b));render()});
+$('publish').onclick=async()=>{
+ if(!sb||!user){status($('uploadStatus'),'Please connect Supabase and log in first.','error');return}
+ const file=$('file').files[0],title=$('title').value.trim(),category=$('category').value,creator=$('creator').value.trim()||user.email?.split('@')[0]||'Creator';
+ if(!file||!title){status($('uploadStatus'),'Choose a video and enter a title.','error');return}
+ if(!file.type.startsWith('video/')){status($('uploadStatus'),'Please select a valid video file.','error');return}
+ if(file.size>50*1024*1024){status($('uploadStatus'),'This starter kit limits videos to 50 MB. Compress the video or configure a suitable storage plan.','error');return}
+ $('publish').disabled=true;status($('uploadStatus'),'Uploading video… keep this page open.');
+ const safeName=file.name.replace(/[^a-zA-Z0-9._-]/g,'_'),path=`${user.id}/${Date.now()}-${safeName}`;
+ const up=await sb.storage.from('game-videos').upload(path,file,{contentType:file.type,upsert:false});
+ if(up.error){$('publish').disabled=false;status($('uploadStatus'),'Upload failed: '+up.error.message,'error');return}
+ const {data:publicData}=sb.storage.from('game-videos').getPublicUrl(path);
+ const ins=await sb.from('videos').insert({user_id:user.id,title,category,creator,video_url:publicData.publicUrl,storage_path:path,status:'published'}).select().single();
+ $('publish').disabled=false;
+ if(ins.error){status($('uploadStatus'),'Video file uploaded but listing failed: '+ins.error.message+'. Contact site admin.','error');return}
+ $('title').value='';$('file').value='';$('creator').value='';$('uploadPanel').classList.remove('show');status($('uploadStatus'),'Upload complete!','ok');await loadVideos()
+};
+async function start(){
+ initClient();
+ if(sb){const {data}=await sb.auth.getSession();user=data.session?.user||null;sb.auth.onAuthStateChange((_event,session)=>{user=session?.user||null;updateAuth()})}
+ updateAuth();await loadVideos()
+}
+start();
+</script>
+</body></html>
